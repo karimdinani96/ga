@@ -1,0 +1,16 @@
+input(p_1gat_0_)
+input(p_6gat_3_)
+input(p_7gat_4_)
+input(p_2gat_1_)
+input(p_3gat_2_)
+
+output(p_22gat_10_)
+output(p_23gat_9_)
+
+8 = nand(p_3gat_2_, p_6gat_3_)
+9 = nand(8, p_2gat_1_)
+10 = nand(p_3gat_2_, p_1gat_0_)
+p_22gat_10_ = nand(10, 9)
+12 = not(8)
+13 = nor(p_2gat_1_, p_7gat_4_)
+p_23gat_9_ = nor(13, 12)
